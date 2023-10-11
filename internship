@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseLoc</title>
+    <link rel="stylesheet" href="clocstyl.css">
+    <link rel="script" href="clocscrp.js">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"> MOTION CUT</h2>
+        <nav class="navigation">
+            <a href=""> Home </a>
+            <a href=""> About </a>
+            <a href="">Services </a>
+            <a href=""> Contact </a>
+            <button class="btnlogin_popup"> LOGIN </button>
+        </nav>
+    </header>
+    <div class="hometxt">
+        <div class="maintxt">
+            <h1> BASIC ABOUT WEBSITE DEGIN</h1>
+            <h2> website used to the login any page on onlie </h2>
+            <br>
+            <p> Introducing C_Loc: Revolutionizing Trust and Transparency.
+                <br>
+                website is at the forefront of innovation, bringing you a cutting-edge solution that redefines trust and transparency in the digital world, powered by Hyperledger technology, we've created a platform that ensures secure, immutable, and efficient transactions.
+                <br>
+                <br>
+                With web site, you can seamlessly engage in peer-to-peer interactions, securely manage case assets, and conduct operations on legal records and documents with confidence. Our commitment to privacy and data integrity guarantees that your sensitive information remains protected.
+                <br>
+                <br>
+                Join us on this journey towards a decentralized and trust-driven future. Experience the power of Hyperledger with Case_Lock today!
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+
+        <div class="form-box-reg">
+            <h2> Join Aboard ! </h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                    <input type="text" placeholder="Full name is required!" required>
+                    <label for="email"> Full Name </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Mail ID is Required!" required>
+                    <label for="email"> Mail ID </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="key-outline"></ion-icon>
+                    </span>
+                    <input type="password" placeholder="Passkey is Required!" required id="userIp1">
+                    <label for="email"> Passkey </label>
+                </div>
+                <div class="rem_for">
+                    <label for="password"><input type="checkbox" id="keycheck" onclick="func1()">
+                        Show/Hide Passkey </label>
+                </div>
+                <div class="rem_for">
+                    <label for=""><input type="checkbox">
+                        T&C Apply! </label>
+                </div>
+                <button type="submit" class="btn"> Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="log_link"> Login!</a></p>
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box-log">
+            <h2>Welcome Back ! </h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Mail ID Required!" required>
+                    <label for="email"> Mail </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="key-outline"></ion-icon>
+                    </span>
+                    <input type="password" placeholder="Passkey is Required!" required id="userIp2">
+                    <label for="email"> Passkey </label>
+                </div>
+                <div class="rem_for">
+                    <label for="password"><input type="checkbox" id="keycheck" onclick="func2()">
+                        Show/Hide Passkey </label>
+                </div>
+                <div class="rem_for">
+                    <label for=""><input type="checkbox">
+                        Remember ME !</label>
+                    <a href="#"> Forgot Key? </a>
+                </div>
+                <button type="submit" class="btn"> Login </button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="reg_link"> Register NOW!</a></p>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="clocscrp.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>   
+
+
+
+
+
+
+csscode 
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alkatra&family=Blaka+Hollow&family=Blaka+Ink&family=Chokokutai&family=Delicious+Handrawn&family=Just+Another+Hand&family=Nabla&family=Sedgwick+Ave&family=Tektur:wght@900&family=Ysabeau+SC:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+body {
+    background: url(bg1jpg.jpg);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    font-family: 'Ysabeau SC', sans-serif;
+
+
+
+}
+
+.logo {
+    font-size: 3em;
+    color: #fff000;
+    user-select: none;
+    font-family: 'Nabla', cursive;
+    color: orangered;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: orangered;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnlogin_popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid orange;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: orange;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.navigation .btnlogin_popup:hover {
+    background: rgba(255, 255, 255, 1);
+    color: orange;
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: orange;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .25s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.hometxt {
+    text-align: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    color: blanchedalmond;
+    text-shadow: 0 0 30px rgba(0, 0, 0, .85);
+    font-weight: 2em;
+    position: inherit;
+    width: 1200px;
+    height: 500px;
+    background: orange;
+    border: 2px solid rgba(255, 165, 0, .5);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .85);
+    display: -moz-deck;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+}
+
+.maintxt h1 {
+    font-family: 'Nabla', cursive;
+    font-size: 5em;
+
+}
+
+.maintxt p {
+    font-size: 1.3em;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+.wrapper {
+    position: inherit;
+    padding-left: 10px;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box-log {
+    width: 100%;
+    padding: 40px;
+    transition: tramsform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box-log {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box-reg {
+    position: absolute;
+    transform: translateX(400px);
+    text-align: center;
+    color: white;
+    transition: none;
+}
+
+.wrapper.active .form-box-reg {
+
+    transition: tramsform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box-log h2 {
+    font-size: 2em;
+    color: gainsboro;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: black;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: orange;
+    line-height: 57px;
+}
+
+.rem_for {
+    font-size: .9em;
+    color: orangered;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rem_for label input {
+    accent-color: orange;
+    margin-right: 3px;
+}
+
+.rem_for a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.rem_for a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: orange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login_register {
+    font-size: .9em;
+    color: orangered;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    justify-content: space-between;
+}
+
+.login_register p a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login_register p a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: rgb(255, 254, 254);
+    font-size: 2em;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    header {
+        padding: 5rem;
+        width: 500px;
+        height: 100px;
+
+    }
+
+    body {
+        padding: 1rem;
+
+    }
+
+    .wrapper {
+        width: 300px;
+        padding: 2rem;
+    }
+} 
+
+
+javascript    
+
+const wrapper = document.querySelector('.wrapper');
+const loglink = document.querySelector('.log_link');
+const reglink = document.querySelector('.reg_link');
+const btnpop = document.querySelector('.btnlogin_popup');
+const icncls = document.querySelector('.icon-close');
+
+reglink.addEventListener('click', () => {
+    wrapper.classList.add('active');
+});
+
+loglink.addEventListener('click', () => {
+    wrapper.classList.remove('active');
+});
+
+btnpop.addEventListener('click', () => {
+    wrapper.classList.add('active-popup');
+});
+icncls.addEventListener('click', () => {
+    wrapper.classList.remove('active-popup');
+});
+
+function func1() {
+    var x = document.getElementById("userIp1");
+    if (x.type === 'password') {
+        x.type = 'text';
+    } else {
+        x.type = 'password';
+    }
+}
+
+function func2() {
+    var y = document.getElementById("userIp2");
+    if (y.type === 'password') {
+        y.type = 'text';
+    } else {
+        y.type = 'password';
+    }
+}
